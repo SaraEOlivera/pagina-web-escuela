@@ -1,0 +1,90 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+
+body{
+  width: 100%;
+  margin: auto;
+  background-color: yellow;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+nav{
+  height: 6rem;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.menu-gral ul, .menu-escuela ul{
+  display: flex;
+  list-style: none;
+}
+
+.menu-gral ul {
+  background-color: #f8fafc;
+  gap: 1em;
+}
+
+.menu-escuela ul {
+  width: 100%;
+  background-color:   #c3aa6f;
+  gap: 4em;
+}
+
+li a {
+  text-decoration: none;
+  color: #334155;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.menu-gral li a {
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-size: 0.8em;
+} 
+
+.menu-escuela li a {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight:bold
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.logo{
+  margin: auto;
+  width: 65%;
+  mix-blend-mode: multiply;
+  filter: brightness(1.1);
+}
+
+.hero h1{
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
+
+
+
+
