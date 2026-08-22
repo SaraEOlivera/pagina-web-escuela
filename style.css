@@ -40,7 +40,7 @@ nav{
 
 .menu-escuela ul {
   width: 100%;
-  background-color:   #c3aa6f;
+  background-color: #c3aa6f;
   gap: 4em;
 }
 
@@ -51,14 +51,24 @@ li a {
 }
 
 .menu-gral li a {
-  /* font-family: "Nunito Sans", sans-serif; */
   font-size: 0.8em;
 } 
 
-.menu-escuela li a {
+.menu-gral li a:hover{
+  font-weight: bolder;
+}
+
+.menu-escuela a {
   text-transform: uppercase;
   font-size: 1.2em;
-  font-weight:bold
+  font-weight:bold;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu-escuela li a:hover{
+  background-color: #a28644;
 }
 
 .hero{
@@ -81,6 +91,54 @@ li a {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
 }
+
+.btn-menu{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+  column-gap: 0.3rem;
+  border: none;
+  color: #334155;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight:bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+.flecha{
+  font-size: 2rem;
+}
+
+.dropdown{
+  position: absolute;
+  background: #c3aa6f;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown a{
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+  margin: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.dropdown li a:hover{
+  background-color: #a28644;
+}
+
+.show{
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
 

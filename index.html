@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- Icono -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/escudo.jpg" type="image/x-icon">
@@ -37,11 +39,12 @@
             <ul>
                 <li><a href="#">Campus Virtual</a></li>
                 <li><a href="#">Contacto</a></li>
-                <div class="desplegable1">
-                    <button class="flecha">Secciones
-                        <i></i>
+                <!-- dropdown -->
+                <div class="desplegable">
+                    <button class="btn-menu" id="btn-menu">Secciones
+                        <span id="flecha" class="flecha material-symbols-outlined">arrow_drop_down</span>
                     </button>
-                    <div class="contenido1">
+                    <div class="dropdown" id="dropdown">
                         <li><a href="#">El Instituto</a></li>
                         <li><a href="#">Nivel Superior</a></li>
                         <li><a href="#">Nivel Secundario</a></li>
@@ -156,5 +159,6 @@
         
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
