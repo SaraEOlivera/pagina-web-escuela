@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <!-- Icono -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+    <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/escudo.jpg" type="image/x-icon">
@@ -61,7 +63,7 @@
         
             <div class="Containers">
                 <!-- <div class="info">Slide 1</div> -->
-                <a class="carrusel-link" target="_blank" href="https://medium.com/@kthamodaran/html-81b54726ac9c">
+                <a class="carrusel-link" target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/educacion/materiales-didacticos">
                     <img src="img/fondo1.jpg" style="width:100%">
                     <span class="carrusel-texto">Material</span>
                 </a>
@@ -69,7 +71,7 @@
         
             <div class="Containers">
                 <!-- <div class="info">Slide 2</div> -->
-                <a class="carrusel-link" target="_blank" href="https://medium.com/@kthamodaran/html-81b54726ac9c">
+                <a class="carrusel-link" target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/educacion/becas">
                     <img src="img/fondo4.jpg" style="width:100%">
                     <span class="carrusel-texto">Becas</span>
                 </a>
@@ -77,9 +79,9 @@
         
             <div class="Containers">
                 <!-- <div class="info">Slide 3</div> -->
-                <a class="carrusel-link" target="_blank" href="https://medium.com/@kthamodaran/html-81b54726ac9c">
+                <a class="carrusel-link" target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/educacion/cursos-capacitaciones">
                     <img src="img/fondo3.jpg" style="width:100%">
-                    <span class="carrusel-texto">Cursos y Talleres</span>
+                    <span class="carrusel-texto">Cursos y Capacitaciones</span>
                 </a>
             </div>
         
@@ -88,64 +90,96 @@
             <a class="forward" onclick="calcularDiapositiva(1)">&#10095;</a>
         </section>
 
-        <!-- Niveles -->
+        <!-- Cards Niveles -->
         <section class="niveles">
-            <div class="nivel-inicial">
-                <h2>Nivel Inicial</h2>
-                <img src="#" alt="Imagen del jardín">
-                <div class="horarios">
-                    <p>Horarios</p>
-                    <p>8:00 a 13:00hs</p>
+            <div class="contenedor-niveles">
+
+                <!-- Inicial -->
+                <div class="nivel-inicial">
+                    <img src="img/inicial.jpg" alt="Imagen del logo del nivel inicial">
+                    <h2>Nivel Inicial</h2>
+                    
+                    <div class="info-cards">
+                        <div class="telefono-cards">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="351-222-4458"></p>
+                        </div>
+                        <div class="mail-cards">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="mail">nivelinicial@escuelaunion.com.ar</p>
+                        </div>
+                        <div class="horario-cards">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Horario de atención: 8 a 13hs</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="contacto"></h2>
-                <div class="contacto">
-                    <p class="telefono"></p>
-                    <p class="mail"></p>
+
+                <!-- Primario -->
+                <div class="nivel-primario">
+                    <img src="img/primario.jpg" alt="Imagen del logo del nivel inicial">
+                    <h2>Nivel Primario</h2>
+                    
+                    <div class="info-cards">
+                        <div class="telefono-cards">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="351-222-4459"></p>
+                        </div>
+                        <div class="mail-cards">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="mail">nivelprimario@escuelaunion.com.ar</p>
+                        </div>
+                        <div class="horario-cards">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Horario de atención: 8 a 18hs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secundario -->
+                <div class="nivel-secundario">
+                    <img src="img/secundario.jpg" alt="Imagen del logo del nivel inicial">
+                    <h2>Nivel Secundario</h2>
+                    
+                    <div class="info-cards">
+                        <div class="telefono-cards">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="351-222-4459"></p>
+                        </div>
+                        <div class="mail-cards">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="mail">nivelsecundario@escuelaunion.com.ar</p>
+                        </div>
+                        <div class="horario-cards">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Horario de atención: 8 a 18hs</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!-- Superior -->
+                <div class="nivel-superior">
+                    <img src="img/superior.jpg" alt="Imagen del logo del nivel inicial">
+                    <h2>Nivel Superior</h2>
+                    
+                    <div class="info-cards">
+                        <div class="telefono-cards">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="351-222-4469"></p>
+                        </div>
+                        <div class="mail-cards">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="mail">nivelsuperiorl@escuelaunion.com.ar</p>
+                        </div>
+                        <div class="horario-cards">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Horario de atención: 18 a 22hs</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="nivel-primario">
-                <h2>Nivel Primario</h2>
-                <img src="#" alt="Imagen del jardín">
-                <div class="horarios">
-                    <p>Horarios</p>
-                    <p>8:00 a 13:00hs</p>
-                </div>
-                <h2 class="contacto"></h2>
-                <div class="contacto">
-                    <p class="telefono"></p>
-                    <p class="mail"></p>
-                </div>
-            </div>
-
-            <div class="nivel-secundario">
-                <h2>Nivel Secundario</h2>
-                <img src="#" alt="Imagen del jardín">
-                <div class="horarios">
-                    <p>Horarios</p>
-                    <p>8:00 a 13:00hs</p>
-                </div>
-                <h2 class="contacto"></h2>
-                <div class="contacto">
-                    <p class="telefono"></p>
-                    <p class="mail"></p>
-                </div>
-            </div>
-
-            <div class="nivel-superior">
-                <h2>Nivel Superior</h2>
-                <img src="#" alt="Imagen del jardín">
-                <div class="horarios">
-                    <p>Horarios</p>
-                    <p>8:00 a 13:00hs</p>
-                </div>
-                <h2 class="contacto"></h2>
-                <div class="contacto">
-                    <p class="telefono"></p>
-                    <p class="mail"></p>
-                </div>
-            </div>
         </section>
 
         <!-- Noticias -->
