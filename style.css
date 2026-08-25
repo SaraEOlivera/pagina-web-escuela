@@ -218,7 +218,7 @@ li a {
 
 .niveles {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-color: #f8fafc;
   padding: 40px 10px;
   box-sizing: border-box;
@@ -229,12 +229,12 @@ li a {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  gap: 15px;
+  gap: 10px;
 }
 
 .contenedor-card{
   flex: 1; 
-  max-width: 270px;
+  max-width: 300px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -249,6 +249,10 @@ li a {
     width: 100%;
     height: 50%;
     object-fit: contain;
+    padding: 15px 0;
+    mix-blend-mode: multiply;
+    filter: brightness(1.1);
+
 }
 
 .contenedor-card h2{
@@ -261,4 +265,13 @@ li a {
   padding: 10px;
   display: flex;
   gap: 10px;
+}
+
+.contacto-cards i {
+  color: #a28644;
+}
+
+.contacto-cards p{
+  font-size: 0.9rem;
+  font-family: "Lexend", sans-serif;
 }
