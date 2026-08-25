@@ -9,16 +9,23 @@
 
 /* Variables */
 
+/* Estilos temporales */
+
+main   {background-color: yellow;}
+/* .carrusel {background-color: orange;} */
+.niveles {background-color: aqua;}
+.novedades{background-color: violet;}
+footer{background-color: sandybrown;}
+
 body{
   width: 100%;
   margin: auto;
-  background-color: yellow;
+  background-color: #f8fafc;
 }
 
 header{
   display: flex;
   flex-direction: column;
-  background-color: #f8fafc;
 }
 
 nav{
@@ -139,8 +146,69 @@ li a {
   opacity: 1;
 }
 
+/* Section Carrusel */
+.carrusel {
+  max-width: 100%;
+  height: 40vh;
+  position: relative;
+  margin: auto;
+}
 
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+  height: 100%;
+}
 
+.carrusel-link{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.carrusel-link img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 2rem;
+    font-weight: 800;   
+}
+
+.back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  padding: 15px;
+  color: grey;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
 
 

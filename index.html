@@ -56,25 +56,39 @@
     </header>
 
     <main>
-        <section class="carrusel">
-            <div class="informacion-carrusel">
-                <div class="informacion">
-                    <a target="_blank" href="https://www.argentina.gob.ar/educacion/materiales-didacticos"><img src="#" alt="fondo1-carrusel"></a>
-                    <div>Materiales Didácticos</div>
-                </div>
-                <div class="informacion">
-                    <a target="_blank" href="https://www.argentina.gob.ar/educacion/becas"><img src="#" alt="fondo2-carrusel"></a>
-                    <div>Becas</div>
-                </div>
-                <div class="informacion">
-                    <a target="_blank" href="https://www.argentina.gob.ar/educacion/cursos-capacitaciones"><img src="#" alt="fondo3-carrusel"></a>
-                    <div>Cursos y Capacitaciones</div>
-                </div>
-
+        <!-- Carrusel de recursos -->
+        <section class="carrusel fade">
+        
+            <div class="Containers">
+                <!-- <div class="info">Slide 1</div> -->
+                <a class="carrusel-link" target="_blank" href="https://medium.com/@kthamodaran/html-81b54726ac9c">
+                    <img src="img/fondo1.jpg" style="width:100%">
+                    <span class="carrusel-texto">Material</span>
+                </a>
             </div>
-
+        
+            <div class="Containers">
+                <!-- <div class="info">Slide 2</div> -->
+                <a class="carrusel-link" target="_blank" href="https://medium.com/@kthamodaran/html-81b54726ac9c">
+                    <img src="img/fondo4.jpg" style="width:100%">
+                    <span class="carrusel-texto">Becas</span>
+                </a>
+            </div>
+        
+            <div class="Containers">
+                <!-- <div class="info">Slide 3</div> -->
+                <a class="carrusel-link" target="_blank" href="https://medium.com/@kthamodaran/html-81b54726ac9c">
+                    <img src="img/fondo3.jpg" style="width:100%">
+                    <span class="carrusel-texto">Cursos y Talleres</span>
+                </a>
+            </div>
+        
+            <!-- Prev and Next buttons -->
+            <a class="back" onclick="calcularDiapositiva(-1)">&#10094;</a>
+            <a class="forward" onclick="calcularDiapositiva(1)">&#10095;</a>
         </section>
 
+        <!-- Niveles -->
         <section class="niveles">
             <div class="nivel-inicial">
                 <h2>Nivel Inicial</h2>
@@ -134,6 +148,7 @@
             </div>
         </section>
 
+        <!-- Noticias -->
         <section class="novedades">
             <div class="ingles">
                 <a target="_blank" href="https://www.argentina.gob.ar/capital-humano/educacion/programas-educativos/congreso-nacional-de-ensenanza-del-ingles-2026">Congreso Nacional de Enseñanza del Inglés 2026</a>
