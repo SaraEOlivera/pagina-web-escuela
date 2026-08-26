@@ -60,6 +60,7 @@ li a {
 
 .menu-escuela{
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .menu-escuela a {

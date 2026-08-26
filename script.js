@@ -23,7 +23,12 @@ document.documentElement.addEventListener("click", function(){
 })
 
 
+
+
+
 //Slider
+const tiempo_intervalo = 2000;
+let idIntervalo = null;
 let index = 1;
 mostrarDiapositiva(index);
 
@@ -43,3 +48,14 @@ function mostrarDiapositiva(n) {
 
   slides[index-1].style.display = "block";//agarra la diapo a mostrar y le cambia el display, de none a block
 } // index-
+
+//Activar el autoplay
+function activarAutoplay() {
+    idIntervalo = setInterval(function(){
+        calcularDiapositiva(1)
+    }, tiempo_intervalo);
+}
+
+
+
+activarAutoplay()
