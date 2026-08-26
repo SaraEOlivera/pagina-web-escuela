@@ -221,11 +221,12 @@ li a {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 10px;
-}
+} 
 
 .contenedor-card{
+  min-width: 0;
   flex: 1; 
   max-width: 300px;
   height: 100%;
@@ -245,7 +246,6 @@ li a {
     padding: 15px 0;
     mix-blend-mode: multiply;
     filter: brightness(1.1);
-
 }
 
 .contenedor-card h2{
@@ -281,9 +281,10 @@ li a {
 
 .novedades {
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   background-color: #c3aa6f;
   padding: 40px 10px;
+  box-sizing: border-box;
 }
 
 .novedades h2 {
@@ -298,8 +299,8 @@ li a {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  gap: 8px;
+  /* justify-content: space-around; */
+  gap: 30px;
 }
 
 .informacion{
@@ -308,7 +309,7 @@ li a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .informacion a{
