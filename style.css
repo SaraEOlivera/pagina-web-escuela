@@ -8,12 +8,21 @@
 }
 
 /* Variables */
+:root {
+  --color-fondo: #f8fafc;
+  --color-dorado-1:#c3aa6f;
+  --color-dorado-2: #a28644;
+  --color-negro: #334155;
+  --fuente-nunito: "Nunito Sans", sans-serif;
+  --fuente-lexend: "Lexend", sans-serif;
+
+}
 
 
 body{
   width: 100%;
   margin: auto;
-  background-color: #f8fafc;
+  background-color: var(--color-fondo);
 }
 
 header{
@@ -34,20 +43,20 @@ nav{
 }
 
 .menu-gral ul {
-  background-color: #f8fafc;
+  background-color: var(--color-fondo);
   gap: 1em;
 }
 
 .menu-escuela ul {
   width: 100%;
-  background-color: #c3aa6f;
+  background-color: var(--color-dorado-1);
   gap: 4em;
 }
 
 li a {
   text-decoration: none;
   color: #334155;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fuente-nunito);
 }
 
 .menu-gral li a {
@@ -73,7 +82,7 @@ li a {
 }
 
 .menu-escuela li a:hover{
-  background-color: #a28644;
+  background-color: var(--color-dorado-2);
 }
 
 .hero{
@@ -93,7 +102,7 @@ li a {
 .hero h1{
   text-align: center;
   font-size: 4rem;
-  font-family: "Lexend", sans-serif;
+  font-family: var(--fuente-lexend);
   font-optical-sizing: auto;
 }
 
@@ -105,8 +114,8 @@ li a {
   margin-top: 8px;
   column-gap: 0.3rem;
   border: none;
-  color: #334155;
-  font-family: "Nunito Sans", sans-serif;
+  color: var(--color-negro);
+  font-family: var(--fuente-nunito);
   font-size: 1.2em;
   font-weight:bold;
   cursor: pointer;
@@ -121,7 +130,7 @@ li a {
 
 .dropdown{
   position: absolute;
-  background: #c3aa6f;
+  background: var(--color-dorado-1);
   visibility: hidden;
   opacity: 0;
 }
@@ -136,7 +145,7 @@ li a {
 }
 
 .dropdown li a:hover{
-  background-color: #a28644;
+  background-color: var(--color-dorado-2);
 }
 
 .show{
@@ -178,9 +187,9 @@ li a {
     left: 50%;
     transform: translate(-50%, -50%); 
     font-size: 2rem;
-    color: #334155;
+    color: var(--color-negro);
     font-weight: 800; 
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--fuente-nunito);
 }
 
 .back, .forward {
@@ -189,7 +198,7 @@ li a {
   top: 48%;
   width: auto;
   padding: 15px;
-  color: #334155;
+  color: var(--color-negro);
   font-weight: bold;
   font-size: 20px;
   transition: 0.4s ease;
@@ -203,8 +212,8 @@ li a {
 }
 
 .back:hover, .forward:hover {
-  background-color: #c3aa6f;
-  color: #f8fafc;
+  background-color: var(--color-dorado-1);
+  color: var(--color-fondo);
 }
 
 /* Section Cards */
@@ -212,7 +221,7 @@ li a {
 .niveles {
   width: 100%;
   height: 100vh;
-  background-color: #f8fafc;
+  background-color: var(--color-fondo);
   padding: 40px 10px;
   box-sizing: border-box;
 }
@@ -232,11 +241,11 @@ li a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid #c3aa6f; 
+  border: 1px solid var(--color-dorado-1); 
 }
 
 .contenedor-card:hover{
-  border: 2px solid #a28644;
+  border: 2px solid var(--color-dorado-2);
 }
 
 .contenedor-card img{
@@ -250,7 +259,7 @@ li a {
 
 .contenedor-card h2{
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fuente-nunito);
   padding: 20px;
 }
 
@@ -269,12 +278,12 @@ li a {
 }
 
 .contacto-cards i {
-  color: #a28644;
+  color: var(--color-dorado-2);
 }
 
 .contacto-cards p{
   font-size: 0.9rem;
-  font-family: "Lexend", sans-serif;
+  font-family: var(--fuente-lexend);
 }
 
 /* Estilos Novedades */
@@ -282,14 +291,14 @@ li a {
 .novedades {
   width: 100%;
   height: 85vh;
-  background-color: #c3aa6f;
+  background-color: var(--color-dorado-1);
   padding: 40px 10px;
   box-sizing: border-box;
 }
 
 .novedades h2 {
   text-align: center;
-  font-family: "Lexend", sans-serif;
+  font-family: var(--fuente-lexend);
   font-size: 2rem;
   padding: 15px 0;
 }
@@ -313,17 +322,17 @@ li a {
 }
 
 .informacion a{
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fuente-nunito);
   text-decoration: none;
-  color: #334155;
+  color: var(--color-negro);
   font-size: 1.2rem;
   font-weight: 800;
   padding: 15px;
 }
 
 .informacion p{
-  font-family: "Nunito Sans", sans-serif;
-  color: #334155;
+  font-family: var(--fuente-nunito);
+  color: var(--color-negro);
 }
 
 /* Estilos Footer */
@@ -331,7 +340,7 @@ li a {
 footer {
   width: 100%;
   height: 45vh;
-  background-color: #f8fafc;
+  background-color: var(--color-fondo);
   padding: 40px 10px;
 }
 
@@ -356,11 +365,11 @@ footer {
   padding: 30px;
   justify-content: center;
   gap: 2rem;
-  background-color: #334155;
+  background-color: var(--color-negro);
 }
 
 .logo-footer i {
-  color: #c3aa6f;
+  color: var(--color-dorado-1);
   font-size: 1rem;
   display: inline-block;
   transition: transform .7s ease-in-out;
@@ -368,23 +377,216 @@ footer {
 
 .logo-footer:hover i{
   transform: rotate(360deg);
-  color: #a28644;
+  color: var(--color-dorado-2);
 }
 
 
 
 .yo p {
-  color: #c3aa6f;
+  color: var(--color-dorado-1);
   font-size: 1rem;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fuente-nunito);
 }
 
 .yo p:hover{
-  color: #a28644;
+  color: var(--color-dorado-2);
   font-style: italic;
-
 }
 
+  /* Responsive  > 768 */
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header,
+  section, 
+  footer{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .menu-escuela ul {
+    gap: 3em;
+  } 
+
+  /* Section Carrusel */
+  .carrusel .Containers{
+    width: 100%;
+  }
+
+  /* Section Cards */
+      
+  /* .niveles {
+    width: 100%;
+    height: 100%;
+    padding: 40px 10px;
+  } */
+      
+  .contenedor-niveles {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+  }
+      
+  .contenedor-card {
+    min-width: 0;
+    flex: 1;
+    max-width: 250px;
+    height: 100%;
+
+  }
+      
+
+  .contenedor-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    padding: 15px 0;
+    mix-blend-mode: multiply;
+    filter: brightness(1.1);
+  }
+      
+        .contenedor-card h2 {
+          text-align: center;
+          font-family: var(--fuente-nunito);
+          padding: 20px;
+        }
+      
+        .logo-niveles {
+          transition: transform 0.7s ease-in-out;
+        }
+      
+        .logo-niveles:hover {
+          transform: rotate(360deg);
+        }
+      
+        .contacto-cards {
+          padding: 10px;
+          display: flex;
+          gap: 10px;
+        }
+      
+        .contacto-cards i {
+          color: var(--color-dorado-2);
+        }
+      
+        .contacto-cards p {
+          font-size: 0.9rem;
+          font-family: var(--fuente-lexend);
+        }
+      
+        /* Estilos Novedades */
+      
+        .novedades {
+          width: 100%;
+          height: 85vh;
+          background-color: var(--color-dorado-1);
+          padding: 40px 10px;
+          box-sizing: border-box;
+        }
+      
+        .novedades h2 {
+          text-align: center;
+          font-family: var(--fuente-lexend);
+          font-size: 2rem;
+          padding: 15px 0;
+        }
+      
+        .contenedor-novedades {
+          padding: 20px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          /* justify-content: space-around; */
+          gap: 30px;
+        }
+      
+        .informacion {
+          flex: 1;
+          max-width: 400px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          /* text-align: justify; */
+        }
+      
+        .informacion a {
+          font-family: var(--fuente-nunito);
+          text-decoration: none;
+          color: var(--color-negro);
+          font-size: 1.2rem;
+          font-weight: 800;
+          padding: 15px;
+        }
+      
+        .informacion p {
+          font-family: var(--fuente-nunito);
+          color: var(--color-negro);
+        }
+      
+        /* Estilos Footer */
+      
+        footer {
+          width: 100%;
+          height: 45vh;
+          background-color: var(--color-fondo);
+          padding: 40px 10px;
+        }
+      
+        .logos {
+          width: 100%;
+          display: flex;
+          margin: auto;
+          justify-content: space-around;
+      
+        }
+      
+        .logos a {
+          height: 70%;
+          text-align: center;
+          margin: 30px auto;
+        }
+      
+        .yo {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          padding: 30px;
+          justify-content: center;
+          gap: 2rem;
+          background-color: var(--color-negro);
+        }
+      
+        .logo-footer i {
+          color: var(--color-dorado-1);
+          font-size: 1rem;
+          display: inline-block;
+          transition: transform .7s ease-in-out;
+        }
+      
+        .logo-footer:hover i {
+          transform: rotate(360deg);
+          color: var(--color-dorado-2);
+        }
+      
+      
+      
+        .yo p {
+          color: var(--color-dorado-1);
+          font-size: 1rem;
+          font-family: var(--fuente-nunito);
+        }
+      
+        .yo p:hover {
+          color: var(--color-dorado-2);
+          font-style: italic;
+        }
+    }
 
 
 
