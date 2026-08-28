@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-*{outline: 2px solid red;}
+/* *{outline: 2px solid red;} */
 
 /* Variables */
 :root {
@@ -32,9 +32,9 @@ header{
 }
 
 nav{
-  height: 6rem;
+  min-height: 4rem;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
   width: 100%;
 }
 
@@ -44,10 +44,10 @@ nav li a {
   font-family: var(--fuente-nunito);
 }
 
-
-.menu-gral ul, .menu-escuela ul{
+.menu-gral ul, .menu-escuela > ul{
   display: flex;
   list-style: none;
+  /* align-items: center; */
 }
 
 .menu-gral{
@@ -56,6 +56,7 @@ nav li a {
 
 .menu-gral ul {
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .menu-gral li a {
@@ -67,14 +68,15 @@ nav li a {
 }
 
 .menu-escuela{
+  position: relative;
   background-color: var(--color-dorado-1);
   margin-bottom: 2rem;
-  z-index: 1;
+  z-index: 10;
 }
 
-.menu-escuela ul {
+.menu-escuela > ul {
   width: 100%;
-  gap: 4em;
+  gap: 2em;
 }
 
 .menu-escuela a {
@@ -86,7 +88,7 @@ nav li a {
   align-items: center;
 }
 
-.menu-escuela li a:hover{
+.menu-escuela li:hover{
   background-color: var(--color-dorado-2);
 }
 
@@ -95,11 +97,12 @@ nav li a {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  padding: 1rem 0;
 }
 
 .logo{
   margin: auto;
-  width: 65%;
+  max-width: 300px;
   mix-blend-mode: multiply;
   filter: brightness(1.1);
 }
@@ -111,12 +114,15 @@ nav li a {
   font-optical-sizing: auto;
 }
 
+.desplegable{
+  position: relative;
+}
+
 .btn-menu{
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 8px;
   column-gap: 0.3rem;
   border: none;
   color: var(--color-negro);
@@ -126,6 +132,7 @@ nav li a {
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+  padding: 0.6rem;
 }
 
 .flecha{
@@ -134,18 +141,27 @@ nav li a {
 
 .dropdown{
   position: absolute;
+  top: 100%;
+  left: 0;
   background: var(--color-dorado-1);
   visibility: hidden;
   opacity: 0;
+  min-width: 220px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 20;
+}
+
+.dropdown > ul{
+    list-style: none;
 }
 
 .dropdown a{
   display: flex;
   align-items: center;
-  column-gap: 4rem;
-  margin: 5px;
+  padding: 0.8 1rem;
   font-size: 1em;
   text-transform: uppercase;
+  color: var(--color-negro);
 }
 
 .dropdown li:hover{
@@ -161,8 +177,7 @@ nav li a {
 .carrusel {
   max-width: 1200px;
   width: 100%;
-  /* max-width: 100%; */
-  height: 45vh;
+  min-height: 350px;
   position: relative;
   margin: auto;
 }
@@ -183,7 +198,7 @@ nav li a {
 .carrusel-link img{
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -201,7 +216,8 @@ nav li a {
 .back, .forward {
   cursor: pointer;
   position: absolute;
-  top: 48%;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
   padding: 15px;
   color: var(--color-negro);
@@ -228,25 +244,23 @@ nav li a {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  height: 100vh;
+  min-height: auto;
   background-color: var(--color-fondo);
   padding: 40px 10px;
-  box-sizing: border-box;
 }
 
 .contenedor-niveles{
   width: 100%;
-  height: 100%;
   display: flex;
-  /* justify-content: space-around; */
-  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 } 
 
 .contenedor-card{
-  min-width: 0;
+  min-width: 240px;
   flex: 1; 
   max-width: 300px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-dorado-1); 
@@ -258,7 +272,7 @@ nav li a {
 
 .contenedor-card img{
     width: 100%;
-    height: 50%;
+    height: 180px;
     object-fit: contain;
     padding: 15px 0;
     mix-blend-mode: multiply;
@@ -268,7 +282,7 @@ nav li a {
 .contenedor-card h2{
   text-align: center;
   font-family: var(--fuente-nunito);
-  padding: 20px;
+  padding: 15px 10px;
 }
 
 .logo-niveles{
@@ -279,9 +293,14 @@ nav li a {
   transform: rotate(360deg);
 }
 
-.contacto-cards{
+.info-cards{
   padding: 10px;
+}
+
+.contacto-cards{
+  padding: 8px 10px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -292,6 +311,7 @@ nav li a {
 .contacto-cards p{
   font-size: 0.9rem;
   font-family: var(--fuente-lexend);
+  word-break: break-word;;
 }
 
 /* Estilos Novedades */
@@ -300,10 +320,9 @@ nav li a {
   max-width: 1200px;
   width: 100%;
   margin:auto;
-  height: 85vh;
+  min-height: auto;
   background-color: var(--color-dorado-1);
   padding: 40px 10px;
-  box-sizing: border-box;
 }
 
 .novedades h2 {
@@ -316,19 +335,17 @@ nav li a {
 .contenedor-novedades{
   padding: 20px;
   width: 100%;
-  height: 100%;
   display: flex;
-  /* justify-content: space-around; */
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .informacion{
   flex: 1; 
+  min-width: 260px; /*pregunr*/
   max-width: 400px;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  /* text-align: justify; */
 }
 
 .informacion a{
@@ -337,20 +354,19 @@ nav li a {
   color: var(--color-negro);
   font-size: 1.2rem;
   font-weight: 800;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .informacion p{
   font-family: var(--fuente-nunito);
   color: var(--color-negro);
+  line-height: 2;
 }
 
 /* Estilos Footer */
 
 footer {
   width: 100%;
-  /* margin: auto; */
-  height: 45vh;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -363,19 +379,20 @@ footer {
   margin: auto;
   justify-content:space-around;
   background-color: var(--color-fondo);
+  padding: 20px 0;
 }
 
 .logos a {
-  height: 70%;
   text-align: center;
-  margin: 30px auto;
+}
+
+.logos img {
+  max-height: 80px;
+  width: auto;
 }
 
 .yo{
   width: 100%;
-  max-width: 1200px;
-  /* height: 50%; */
-  flex: 1;
   display: flex;
   padding: 20px;
   justify-content: center;
@@ -395,8 +412,6 @@ footer {
   transform: rotate(360deg);
   color: var(--color-dorado-2);
 }
-
-
 
 .yo p {
   color: var(--color-dorado-1);
