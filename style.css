@@ -422,6 +422,34 @@ footer {
   font-style: italic;
 }
 
+/* boton arriba */
+.arriba {
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  height: 45px;
+  width: 50px;
+  transform: translateY(100px);
+  transition: .3s;
+  border-radius: 100%;
+}
+
+.arriba i {
+  color: var(--color-negro);
+  font-size: 2.3rem;
+}
+
+.arriba i:hover {
+  color: var(--color-dorado-2);
+}
+
+.arriba-activo{
+  transform: translateY(0);
+}
+
+
 /* Responsive  */
 
 @media (max-width: 1200px) {

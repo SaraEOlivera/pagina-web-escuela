@@ -59,3 +59,22 @@ function activarAutoplay() {
 
 
 activarAutoplay()
+
+arriba = document.getElementById("arriba");
+arriba.addEventListener("click", ()=>{
+    window.scrollTo(0,0);
+})
+
+
+window.onscroll = ()=>{
+    agregarBtnArriba();
+};
+
+const agregarBtnArriba = ()=>{
+    if(window.scrollY < 300){
+        arriba.classList.remove("arriba-activo");
+    } else {
+        arriba.classList.add("arriba-activo");
+    }
+}
+
