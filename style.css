@@ -16,6 +16,7 @@
   --color-negro: #334155;
   --fuente-nunito: "Nunito Sans", sans-serif;
   --fuente-lexend: "Lexend", sans-serif;
+  --maximo: 1200px;
 }
 
 body{
@@ -23,7 +24,7 @@ body{
 }
 
 header{
-  max-width: 1200px;
+  max-width: var(--maximo);
   width: 100%;
   margin: auto;
   display: flex;
@@ -173,7 +174,7 @@ nav li a {
 
 /* Section Carrusel */
 .carrusel {
-  max-width: 1200px;
+  max-width: var(--maximo);
   width: 100%;
   min-height: 350px;
   position: relative;
@@ -239,7 +240,7 @@ nav li a {
 /* Section Cards */
 
 .niveles {
-  max-width: 1200px;
+  max-width: var(--maximo);
   width: 100%;
   margin: auto;
   min-height: auto;
@@ -315,7 +316,7 @@ nav li a {
 /* Estilos Novedades */
 
 .novedades {
-  max-width: 1200px;
+  max-width: var(--maximo);
   width: 100%;
   margin:auto;
   min-height: auto;
@@ -372,7 +373,7 @@ footer {
 
 .logos{
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--maximo);
   display: flex;
   margin: auto;
   justify-content:space-around;
