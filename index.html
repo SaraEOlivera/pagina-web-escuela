@@ -21,24 +21,24 @@
         <!-- nav chiquito -->
         <nav class="menu-gral">
             <ul>
-                <li><a href="#">ARGENTINA</a></li>
-                <li><a href="#">CEDOC</a></li>
-                <li><a href="#">RED INFoD</a></li>
-                <li><a href="#">MAPA</a></li>
-                <li><a href="#">BIBLIOTECA</a></li>
-                <li><a href="#">VIDEOTUTORIALES</a></li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://www.argentina.gob.ar/">ARGENTINA</a></li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://cedoc.infd.edu.ar/">CEDOC</a></li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://red.infd.edu.ar/">RED INFoD</a></li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://mapa.infd.edu.ar/">MAPA</a></li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://red.infd.edu.ar/biblioteca-nuestra-escuela/">BIBLIOTECA</a></li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://red.infd.edu.ar/video-tutoriales-del-campus/">VIDEOTUTORIALES</a></li>
             </ul>
         </nav>
         <!-- logo -->
         <div class="hero">
-            <img class="logo" src="img/logo_1.jpg" alt="Logo de la escuela">
+            <img id="logo" class="logo" src="img/logo_1.jpg" alt="Escudo de la escuela">
             <h1>Escuela Unión</h1>
         </div>
         <!-- nav escuela  -->
         <nav class="menu-escuela">
             <ul>
                 <li><a href="#">Campus Virtual</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#niveles">Contacto</a></li>
                 <!-- dropdown -->
                 <li class="desplegable">
                     <button class="btn-menu" id="btn-menu">Secciones
@@ -46,10 +46,10 @@
                     </button>
                     <div class="dropdown" id="dropdown">
                         <ul>
-                            <li><a href="#">El Instituto</a></li>
-                            <li><a href="#">Nivel Superior</a></li>
-                            <li><a href="#">Nivel Secundario</a></li>
-                            <li><a href="#">Calendario Académico</a></li>
+                            <li><a href="#nivel-inicial">Nivel Inicial</a></li>
+                            <li><a href="#nivel-primario">Nivel Primario</a></li>
+                            <li><a href="#nivel-secundario">Nivel Secundario</a></li>
+                            <li><a href="#nivel-superior">Nivel Superior</a></li>
                         </ul>
                     </div>
                 </li>
@@ -59,10 +59,9 @@
 
     <main>
         <!-- Carrusel de recursos -->
-        <section class="carrusel fade">
+        <section class="carrusel">
         
             <div class="Containers">
-                <!-- <div class="info">Slide 1</div> -->
                 <a class="carrusel-link" target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/educacion/materiales-didacticos">
                     <img src="img/fondo1.jpg" style="width:100%">
                     <span class="carrusel-texto">Material</span>
@@ -70,7 +69,6 @@
             </div>
         
             <div class="Containers">
-                <!-- <div class="info">Slide 2</div> -->
                 <a class="carrusel-link" target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/educacion/becas">
                     <img src="img/fondo4.jpg" style="width:100%">
                     <span class="carrusel-texto">Becas</span>
@@ -78,37 +76,36 @@
             </div>
         
             <div class="Containers">
-                <!-- <div class="info">Slide 3</div> -->
                 <a class="carrusel-link" target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/educacion/cursos-capacitaciones">
                     <img src="img/fondo3.jpg" style="width:100%">
                     <span class="carrusel-texto">Cursos y Capacitaciones</span>
                 </a>
             </div>
         
-            <!-- Prev and Next buttons -->
+            <!-- btn anterior y sgte -->
             <a class="back" onclick="calcularDiapositiva(-1)">&#10094;</a>
             <a class="forward" onclick="calcularDiapositiva(1)">&#10095;</a>
         </section>
 
         <!-- Cards Niveles -->
-        <section class="niveles">
+        <section id="niveles" class="niveles">
             <div class="contenedor-niveles">
 
                 <!-- Inicial -->
-                <div class="contenedor-card nivel-inicial">
-                    <img class="logo-niveles" src="img/inicial.jpg" alt="Imagen del logo del nivel inicial">
+                <div id="nivel-inicial" class="contenedor-card">
+                    <img class="logo-niveles" src="img/inicial.jpg" alt="Imagen del escudo del nivel inicial">
                     <h2>Nivel Inicial</h2>
                     
                     <div class="info-cards">
-                        <div class="contacto-cards telefono-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-telephone-fill"></i>
-                            <p class="numero-card">351-222-4457</p>
+                            <p>351-222-4457</p>
                         </div>
-                        <div class="contacto-cards mail-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-envelope-fill"></i>
-                            <p class="mail">inicial@eunion.com</p>
+                            <p>inicial@eunion.com</p>
                         </div>
-                        <div class="contacto-cards horario-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-stopwatch"></i>
                             <p>Horario de atención: 8 a 13hs</p>
                         </div>
@@ -116,20 +113,20 @@
                 </div>
 
                 <!-- Primario -->
-                <div class="contenedor-card nivel-primario">
-                    <img class="logo-niveles" src="img/primario.jpg" alt="Imagen del logo del nivel inicial">
+                <div id="nivel-primario" class="contenedor-card">
+                    <img class="logo-niveles" src="img/primario.jpg" alt="Imagen del escudo del nivel inicial">
                     <h2>Nivel Primario</h2>
                     
                     <div class="info-cards">
-                        <div class="contacto-cards telefono-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-telephone-fill"></i>
-                            <p class="numero-card">351-222-4458</p>
+                            <p>351-222-4458</p>
                         </div>
-                        <div class="contacto-cards mail-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-envelope-fill"></i>
-                            <p class="mail">primaria@eunion.com</p>
+                            <p>primaria@eunion.com</p>
                         </div>
-                        <div class="contacto-cards horario-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-stopwatch"></i>
                             <p>Horario de atención: 8 a 18hs</p>
                         </div>
@@ -137,20 +134,20 @@
                 </div>
 
                 <!-- Secundario -->
-                <div class="contenedor-card nivel-secundario">
-                    <img class="logo-niveles" src="img/secundario.jpg" alt="Imagen del logo del nivel inicial">
+                <div id="nivel-secundario" class="contenedor-card">
+                    <img class="logo-niveles" src="img/secundario.jpg" alt="Imagen del escudo del nivel inicial">
                     <h2>Nivel Secundario</h2>
                     
                     <div class="info-cards">
-                        <div class="contacto-cards telefono-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-telephone-fill"></i>
-                            <p class="numero-card">351-222-4459</p>
+                            <p>351-222-4459</p>
                         </div>
-                        <div class="contacto-cards mail-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-envelope-fill"></i>
-                            <p class="mail">secundaria@eunion.com</p>
+                            <p>secundaria@eunion.com</p>
                         </div>
-                        <div class="contacto-cards horario-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-stopwatch"></i>
                             <p>Horario de atención: 8 a 18hs</p>
                         </div>
@@ -158,20 +155,20 @@
                 </div> 
                 
                 <!-- Superior -->
-                <div class="contenedor-card nivel-superior">
-                    <img class="logo-niveles" src="img/superior.jpg" alt="Imagen del logo del nivel inicial">
+                <div id="nivel-superior" class="contenedor-card">
+                    <img class="logo-niveles" src="img/superior.jpg" alt="Imagen del escudo del nivel inicial">
                     <h2>Nivel Superior</h2>
                     
                     <div class="info-cards">
-                        <div class="contacto-cards telefono-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-telephone-fill"></i>
-                            <p class="numero-card">351-222-4460</p>
+                            <p>351-222-4460</p>
                         </div>
-                        <div class="contacto-cards mail-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-envelope-fill"></i>
-                            <p class="mail">superior@eunion.com</p>
+                            <p>superior@eunion.com</p>
                         </div>
-                        <div class="contacto-cards horario-cards">
+                        <div class="contacto-cards">
                             <i class="bi bi-stopwatch"></i>
                             <p>Horario de atención: 18 a 22hs</p>
                         </div>
@@ -187,7 +184,7 @@
             <h2>Novedades</h2>
             <div class="contenedor-novedades">
 
-                <div class="informacion ingles">
+                <div class="informacion">
                     <a target="_blank" rel="noopener noreferrer"
                         href="https://www.argentina.gob.ar/capital-humano/educacion/programas-educativos/congreso-nacional-de-ensenanza-del-ingles-2026">Congreso
                         Nacional de Enseñanza del Inglés 2026
@@ -195,7 +192,7 @@
                     <p>La Secretaría de Educación del Ministerio de Capital Humano, en colaboración con el British Council, invita a participar del Congreso Nacional de Enseñanza del Inglés 2026, una iniciativa que se desarrolla en el marco del Programa Nacional de Fortalecimiento de la Enseñanza del Inglés. El Congreso constituye un espacio federal de encuentro, formación e intercambio profesional destinado a fortalecer la enseñanza del inglés en el sistema educativo argentino.</p>
                 </div>
 
-                <div class="informacion alfabetizacion">
+                <div class="informacion">
                     <a target="_blank" rel="noopener noreferrer"
                         href="https://red.infd.edu.ar/abrio-la-inscripcion-de-la-quinta-edicion-de-cursos-virtuales-sobre-alfabetizacion-para-docentes/">Abrió
                         la inscripción de la 5ta edición de cursos virtuales sobre alfabetización para docentes
@@ -203,7 +200,7 @@
                     <p>El Ministerio de Capital Humano informa que, a partir de un trabajo conjunto entre el Instituto Nacional de Formación Docente (INFoD) y la Unidad de Alfabetización de la Secretaría de Educación, se lanzó la cuarta edición de cursos destinados a intensificar la formación docente en torno a la enseñanza de la lectura y la escritura. La propuesta está dirigida a docentes de nivel inicial, primario y formación docente.</p>
                 </div>
 
-                <div class="informacion lectura">
+                <div class="informacion">
                     <a target="_blank" rel="noopener noreferrer"
                         href="https://red.infd.edu.ar/modo-lectura-un-nuevo-cuadernillo-para-acompanar-a-la-formacion-docente-en-la-promocion-de-la-lectura/">Modo
                         lectura: un nuevo cuadernillo para acompañar a la formación docente en la promoción de la lectura
